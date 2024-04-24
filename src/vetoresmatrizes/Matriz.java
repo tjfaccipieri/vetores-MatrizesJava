@@ -35,7 +35,13 @@ public class Matriz {
         // exibindo o resultado da soma dos valores que foram exibidos acima
         System.out.println("\nSoma de todos os elementos da Diagonal Principal: " + somaDiagonalPrincipal);
 		
-		
+     // Mostrando e somando os elementos da diagonal secundária, seguindo a mesma lógica acima
+        System.out.println("Elementos da Diagonal Secundária:");
+        for (int contador = 0; contador < 3; contador++) {
+            System.out.print(numeros[contador][2 - contador] + " ");
+            somaDiagonalSecundaria += numeros[contador][2 - contador];
+        }
+        System.out.println("\nSoma de todos os elementos da Diagonal Secundária: " + somaDiagonalSecundaria);
 	}
 
 }
